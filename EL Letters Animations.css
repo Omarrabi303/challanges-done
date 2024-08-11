@@ -1,0 +1,179 @@
+
+.love {
+    width: 150px;
+    height: 262.5px;
+    background-color: black;
+    position: relative;
+}
+.one{
+    display: grid;
+    width: 112.5px;
+    height: 262.5px;
+    position: absolute;
+    right: 0;
+    grid-template-rows: repeat(7, 37.5px);
+    grid-template-columns: 112.5px;
+}
+.Three,.four ,.six,.seven{
+    background-color: white;
+}
+.two,.five,.eight{
+    background-color: black;
+}
+.ll{
+    width: 150px;
+    height: 262.5px;
+    background-color: black;
+    position: relative;
+    left: 180px;
+    bottom: 262.5px;
+}
+
+.second{
+    display: grid;
+    width: 112.5px;
+    height: 262.5px;
+    position: absolute;
+    right: 0;
+    grid-template-rows: repeat(7, 37.5px);
+    grid-template-columns: 112.5px;
+}
+.Threel,.fourl ,.sixl,.sevenl,.twol,.fivel{
+    background-color: white;
+}
+.eightl{
+    background-color: black;
+}
+.boxe,.boxl{
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border: 5px solid black;
+}
+.boxe{
+    position: relative;
+    top: -524px;
+    left: 115px;
+    animation-name: boxe;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+.boxl{
+    position: relative;
+    top: -333px;
+    left: 296px;
+    opacity: 0;
+    animation-name: boxl;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-duration: 2s;
+}
+@keyframes boxe {
+    0%{
+        top: -524px;
+        left: 115px;
+    }
+    8.333%{
+        top: -524px;
+        left: 0;
+    }
+    16.666666%{
+        top: -411px;
+        left: 0px;
+    }
+    25%{
+        top: -411px;
+        left: 115px;
+    }
+    33.333%{
+        top: -411px;
+        left: 0px;
+    }
+    41.6666%{
+        top: -298px;
+        left: 0px;
+    }
+    50%{
+        top: -298px;
+        left: 115px;
+    }
+    58.3333%{
+        top: -298px;
+        left: 0px;
+    }
+    66.6666%{
+        top: -411px;
+        left: 0px;
+    }
+    75%{
+        top: -411px;
+        left: 115px;
+    }
+    83.333%{
+        top: -411px;
+        left: 0px;
+    }
+    91.66666%{
+        top: -524px;
+        left:0px;
+    }
+    100%{
+        top:-524px;
+        left:115px;
+    }
+}
+@keyframes boxl {
+    0%{
+        opacity: 0.5;
+        top: -333px;
+        left: 296px;
+    }
+    50%{
+        
+        opacity:1;
+        top:-333px;
+        left: 181px;
+    }
+    85%{        
+        opacity:1;
+        top:-557px ;
+        left: 181px;
+    }
+    100%{
+        opacity:0;
+        top:-557px ;
+        left: 181px;
+    }
+}
+/* @keyframes boxl {
+    0%{
+        opacity: 0.5;
+        top: -333px;
+        left: 296px;
+    }
+    20%{
+        opacity: 1;
+        top: -333px;
+        left: 250px;
+    }
+    40%{
+        opacity:1;
+        top:-333px;
+        left: 181px;
+    }
+    60%{
+        top:-400px;
+        left: 181px;
+        opacity:1;
+    }
+    80%{
+        opacity:0.5;
+        top: -557px ;
+        left: 181px;
+    }
+    100%{
+        opacity:0;
+        top:-557px ;
+        left: 181px;
+    }
+} */

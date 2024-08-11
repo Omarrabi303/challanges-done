@@ -1,0 +1,100 @@
+.main{
+    display: grid;
+    grid-template-columns:repeat(4,205px);
+    grid-template-rows: 315px 350px 350px 230px ;
+    grid-template-areas: 
+    "one one two three "
+    "four five five three"
+    "four six six three"
+    "seven eight nine ten";
+    background-color: rgb(177, 175, 175);
+    margin: 10px auto;
+    padding: 10px;
+    gap: 10px 10px;
+}
+h3{
+    display: block;
+    font-weight: bold;
+    font-size: smaller;
+}
+h4{
+    display: block;
+    opacity: 0.4;
+    font-size: smaller;
+}
+.b{
+    font-weight: bold;
+}
+p{
+    margin-bottom: -8px;
+}
+.one,
+.two,
+.four,
+.six,
+.seven,
+.nine,
+.ten{
+    background-color:white;
+    color: black;
+    position: relative;
+    padding: 5px;
+    font-size: 16.5px;
+}
+.three,
+.five,
+.eight{
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 5px;
+    font-size: 16.5px;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.ten{
+    grid-area: ten;
+}
+.one::before,
+.two::before,
+.four::before,
+.six::before,
+.seven::before,
+.nine::before,
+.ten::before,
+.three::before,
+.five::before,
+.eight::before{
+    content: "";
+    width: 100%;
+    background-color: red;
+    height: 4px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
